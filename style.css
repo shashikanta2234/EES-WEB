@@ -1,0 +1,115 @@
+body{
+    background-color: #00ffff;
+    padding: 0 auto;
+    margin: 0;
+}
+.dd1{
+    background-color: rgb(23, 14, 48);
+    height:auto;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+}
+h1{
+    color: #ffffff;
+}
+.card-bg{
+    margin:5px;
+    display: inline-block;
+    width:400px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.612);
+    border-radius:30px;
+}
+@keyframes bgg{
+    0%{background-color: rgba(255, 255, 255, 0.612);}
+    100%{background-color: rgb(255, 255, 255);}
+}
+.card-upper{
+    width: 400px;
+    height: 120px;
+    position:absolute;
+    border-radius: 30px 30px 150px 150px;
+    background-color: rgb(37, 20, 80);
+}
+@keyframes ani1{
+    0%{background-color: #ffffff; height: 80px;}
+    100%{background-color:rgba(39, 18, 91, 0.896); height: 120px;}
+}
+.card-bg:hover{
+    animation: bgg 0.2s ease-in-out;
+    background-color: #ffffff;
+}
+.card-bg:hover .card-upper{
+    height: 120px;
+    animation:ani1 0.5s ease-in-out;
+    background-color: rgb(37, 20, 80);
+}
+.card-content{
+    width: 400px;
+    height: 200px;
+    position:relative;
+    top: 190px;
+    
+}
+.card-content h3,p{
+    position:relative;
+    top:-80px;
+    font-family:poppins,sans-serif;
+    padding-left: 20px;
+}
+.card-img{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    opacity: 1;
+    top: 40px;
+    right: 30px;
+    border-radius: 90px;
+    border-color:rgba(255, 255, 255, 0.612);
+    border-width: 5px;
+    border-style: solid;
+}
+@keyframes trans1{
+    0%{ transform: scale(1.05);}
+    100%{ transform: scale(1.1);}
+}
+.card-bg:hover .card-img{
+    transform: scale(1.1);
+    animation: trans1 0.5s ease-in-out;
+    border: 5px rgb(255, 255, 255) solid;
+    opacity: 1;
+}
+.p1{
+    font-family: poppins,sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.linked{
+    height:35px;
+    width: 35px;
+    position: relative;
+    padding: 10px;
+    bottom: 30px;
+}
+#team-btn{
+    position:relative;
+    text-decoration: none;
+    background-color: #ffffffe2;
+    color: black;
+    top:-20px;
+    left: 42.5%;
+    text-align: center;
+    height: 40px;
+    width: 15%;
+    border-radius: 20px;
+}
+#team-btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+#team-btn:hover {
+    background-color: #ffffff;
+}
